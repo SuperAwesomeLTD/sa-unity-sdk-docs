@@ -5,8 +5,8 @@ import os
 project = '<sdk_project>'
 copyright = '<sdk_company>'
 author = '<sdk_author>'
-version = '<sdk_version>'
-release = '<sdk_version>'
+version = '<sdk_version_unity>'
+release = '<sdk_version_unity>'
 
 # theme config
 html_theme = '<sdk_theme>'

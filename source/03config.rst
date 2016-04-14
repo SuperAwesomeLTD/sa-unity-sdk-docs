@@ -32,7 +32,7 @@ You can leave these settings as they are or change them to fit your testing or p
 
     	// Use this for initialization
     	void Start () {
-    		SuperAwesome.SuperAwesome.instance.setConfigurationProduction ();
+            SuperAwesome.SuperAwesome.instance.setConfigurationProduction ();
             SuperAwesome.SuperAwesome.instance.enableTestMode ();
             // SuperAwesome.SuperAwesome.instance.disableTestMode ();
     	}

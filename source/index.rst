@@ -6,7 +6,7 @@ The SuperAwesome Unity SDK (Software Development Kit) lets you to easily add COP
 =============== ========
 Info            Contents
 =============== ========
-Version         <sdk_version>
+Version         <sdk_version_unity>
 GitHub          <sdk_source>
 iOS Support     <sdk_iosmin>
 Android Support <sdk_androidmin>
