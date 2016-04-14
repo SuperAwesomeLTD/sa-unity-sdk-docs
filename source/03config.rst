@@ -24,9 +24,9 @@ You can leave these settings as they are or change them to fit your testing or p
 
 .. code-block:: c#
 
-using UnityEngine;
-using System.Collections;
-using SuperAwesome;
+    using UnityEngine;
+    using System.Collections;
+    using SuperAwesome;
 
     public class MainScript : MonoBehaviour {
 
