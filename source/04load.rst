@@ -1,2 +1,2 @@
-Loading ads
-===========
+Load ads
+========

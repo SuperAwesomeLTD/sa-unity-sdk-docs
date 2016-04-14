@@ -1,2 +1,2 @@
-Display Ads
+Display ads
 ===========

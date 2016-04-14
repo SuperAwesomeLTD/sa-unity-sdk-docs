@@ -1,2 +1,2 @@
-Parental Gate
+Parental gate
 =============

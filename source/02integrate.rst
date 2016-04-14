@@ -1,5 +1,5 @@
-Getting started
-===============
+Integrate the SDK
+=================
 
 The SuperAwesome Unity SDK, as of version 3.0.8, is built with extensions to iOS / Android in order to work together
 with the SuperAwesome Android or iOS SDK.
@@ -12,8 +12,8 @@ proper WebViews, better fullscreen experience, etc.
 * containing a single scene, called **MainScene**, with a camera linked to
 * a single C# file, called **MainScript.as**, that acts as main class.
 
-Integrate Unity SDK
-^^^^^^^^^^^^^^^^^^^
+Integrate the Unity SDK
+^^^^^^^^^^^^^^^^^^^^^^^
 
 To integrate the base Unity SDK into your app, first download the
 `SuperAwesome.unitypackage <https://github.com/SuperAwesomeLTD/sa-unity-sdk-docs/raw/master/source/res/SuperAwesome.unitypackage>`_
@@ -44,7 +44,8 @@ Add iOS dependencies
 
 To complete integrating the SDK for iOS, you'll need to follow the next steps (once):
 
-* Build the project for iOS
+Build the project for iOS
+-------------------------
 
 To do this, click on **File > Build Settings** menu.
 There, select the **iOS** option and check the **Symlink Unity Libraries** and **Development build** options.
@@ -52,7 +53,8 @@ Then, click on **Build** and save the new XCode project on your drive.
 
 .. image:: img/IMG_04_iOSBuild.png
 
-* Add the SuperAwesome SDK via CocoaPods
+Add the SuperAwesome iOS SDK via CocoaPods
+------------------------------------------
 
 Next, you'll need to add the AwesomeAds iOS SDK by following the quick guide below:
 
@@ -93,7 +95,8 @@ Save the file and exit it. Then execute
 to tell CocoaPods to add the SuperAwesome iOS SDK library and Unity plugins to your project.
 Don't forget to open the **.xcworkspace** file to open your project in Xcode, instead of the .xcproj file, from here on out.
 
-* Final setup
+Final setup
+-----------
 
 After the CocoaPod dependency has been added, you have to make some changes to the default Unity build configuration, as the CocoaPods settings need
 to be propagated in the build target but won't have done so since Unity has already set these values.
@@ -125,7 +128,8 @@ Add Android dependencies
 
 To complete integrating the SDK for Android, you'll need to follow the next steps (once):
 
-* Build the project for Android
+Build the project for Android
+-----------------------------
 
 To do this, click on **File > Build Settings** menu.
 There, select the **Android** option and check the **Google Android Project** and **Development build** options.
@@ -133,7 +137,8 @@ Then, click on **Build** and save the new Android project on your drive.
 
 .. image:: img/IMG_08_AndroidBuild.png
 
-* Create the settings file
+Create the settings file
+------------------------
 
 Then, go to your new project folder:
 
@@ -150,7 +155,8 @@ Then, using Android Studio, import your Unity Android project by selecting the .
 
 .. image:: img/IMG_08_ImportingAndroid.png
 
-* Add the SuperAwesome SDK via Gradle
+Add the SuperAwesome Android SDK via Gradle
+-------------------------------------------
 
 Next, you'll need to add the AwesomeAds Android SDK by following the quick guide below.
 
@@ -178,7 +184,8 @@ and click **Sync Task** when prompted.
 If you'd want to install the SDK from a .jar archive, not through Gradle, follow the instructions
 `here </extdocs/sa-mobile-sdk-android/html/02integrate.html#add-the-sdk-as-a-jar-library>`_.
 
-* Final setup
+Final setup
+-----------
 
 Finally, you'll need to do a small change to your default Unity Android manifest file.
 Find the line
@@ -190,8 +197,8 @@ Find the line
 and set the value to **true**.
 If you don't do this then banner ads won't be clickable on Android.
 
-Remember
-^^^^^^^^
+Before you begin
+^^^^^^^^^^^^^^^^
 
 Please remember that in Unity, click events are not triggered at all unless there is an EventSystem UI object.
 If this doesn't exist in the Hierarchy, add one from the **GameObject > UI** menu.
