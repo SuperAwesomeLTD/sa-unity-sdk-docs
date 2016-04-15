@@ -11,7 +11,7 @@ GitHub          <sdk_source>
 iOS Support     <sdk_iosmin>
 Android Support <sdk_androidmin>
 Support         `<sdk_devsuspport> <mailto:<sdk_devsuspport>>`_
-License         `LICENSE <https://raw.githubusercontent.com/SuperAwesomeLTD/sa-mobile-sdk-ios/master/LICENSE>`_
+License         `LICENSE <https://raw.githubusercontent.com/SuperAwesomeLTD/sa-unity-sdk/master/LICENSE>`_
 =============== ========
 
 Table of Contents:
