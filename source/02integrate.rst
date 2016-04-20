@@ -81,7 +81,7 @@ This will create a new file simply called **Podfile**. Open it and alter it to l
     platform :ios, '6.0'
 
     target 'Unity-iPhone' do
-      pod 'SuperAwesome/Unity'
+      pod 'SuperAwesome/Unity', '<sdk_version_ios>'
     end
 
 
