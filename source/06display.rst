@@ -73,6 +73,11 @@ Interstitial ads are represented by objects of type **SAInterstitialAd**.
             if (interstitialAdData != null) {
                 interstitial = SAInterstitialAd.createInstance ();
                 interstitial.setAd(interstitialAdData);
+
+                // lock orientation of ad
+                video.shouldLockOrientation = true;
+                video.lockOrientation = SALockOrientation.LANDSCAPE;
+
                 interstitial.play();
             }
         }
@@ -101,10 +106,18 @@ Finally, fullscreen video ads are represented by **SAVideoAd**.
                 video.setAd(videoAdData);
                 video.shouldShowCloseButton = true;
                 video.shouldAutomaticallyCloseAtEnd = true;
+
+                // lock orientation of ad
+                video.shouldLockOrientation = true;
+                video.lockOrientation = SALockOrientation.LANDSCAPE;
+
+                // toggles a small video "click" button
+                // instead of the whole video surface
+                video.shouldShowSmallClickButton = true;
+
                 video.play ();
             }
         }
     }
 
-They're similar to interstitial ads, but notice there are two parameters you can set, **shouldShowCloseButton** and
-**shouldAutomaticallyCloseAtEnd**.
+They're similar to interstitial ads, but notice there are more additional parameters you can set.
