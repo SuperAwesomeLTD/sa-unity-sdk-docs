@@ -16,7 +16,7 @@ Integrate the Unity SDK
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 To integrate the base Unity SDK into your app, first download the
-`SuperAwesome.unitypackage <https://github.com/SuperAwesomeLTD/sa-unity-sdk-docs/raw/master/source/res/SuperAwesome.unitypackage>`_
+`SuperAwesome-<sdk_version_unity>.unitypackage <https://github.com/SuperAwesomeLTD/sa-unity-sdk-docs/raw/master/source/res/SuperAwesome-<sdk_version_unity>.unitypackage>`_
 file and import it into your Unity project as a custom assets package.
 
 You should see an image similar to this:
