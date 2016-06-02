@@ -199,7 +199,7 @@ Once it's there, in Android Studio you'll need to select it, right-click it and 
 
 .. image:: img/IMG_03_JAR_1.png
 
-2) Download `saunity.jar <>`_
+2) Download `saunity.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/saunity.jar>`_
 
 Also add it to your project's **lib** folder, the same as the previous archive.
 
