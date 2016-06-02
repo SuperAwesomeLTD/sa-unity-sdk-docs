@@ -174,9 +174,6 @@ Just include the following in your module's **build.gradle** file (usually the f
         // load the SuperAwesome SDK core as well as the Unity plugin
         compile 'tv.superawesome.sdk:saunity:<sdk_version_android>'
 
-        // optional - for MOAT integration
-        compile 'tv.superawesome.sdk:samoat:<sdk_version_android>'
-
         // optional Google Play Services
         compile 'com.google.android.gms:play-services:8.4.0'
     }
