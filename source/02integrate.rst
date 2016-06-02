@@ -171,11 +171,15 @@ Just include the following in your module's **build.gradle** file (usually the f
     }
 
     dependencies {
-        compile 'tv.superawesome.sdk:sa-sdk:<sdk_version_android>@aar'
+        // load the SuperAwesome SDK core as well as the Unity plugin
+        compile 'tv.superawesome.sdk:saunity:<sdk_version_android>'
+
+        // optional - for MOAT integration
+        compile 'tv.superawesome.sdk:samoat:<sdk_version_android>'
+
+        // optional Google Play Services
         compile 'com.google.android.gms:play-services:8.4.0'
     }
-
-
 
 and click **Sync Task** when prompted.
 
@@ -194,6 +198,10 @@ The libs folder should be located on the same level as the **src** and **build**
 Once it's there, in Android Studio you'll need to select it, right-click it and then **Add as Library**.
 
 .. image:: img/IMG_03_JAR_1.png
+
+2) Download `saunity.jar <>`_
+
+Also add it to your project's **lib** folder, the same as the previous archive.
 
 2) Download `sa-sdk-res.zip <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-res.zip>`_ and unzip it.
 
@@ -221,7 +229,6 @@ You'll find two folders inside:
 
 .. image:: img/IMG_03_JAR_3.png
 
-
 This will register two new activities and one service for your application, all needed by the SDK.
 
 4) At the end you'll also need to add Google Play Services as a dependency to the project, either as a JAR or through Gradle.
@@ -229,7 +236,7 @@ This will register two new activities and one service for your application, all 
 Final setup
 -----------
 
-Finally, no matter your approache you'll need to do a small change to your default Unity Android manifest file.
+Finally, no matter your approach you'll need to do a small change to your default Unity Android manifest file.
 Find the line
 
 .. code-block:: xml
