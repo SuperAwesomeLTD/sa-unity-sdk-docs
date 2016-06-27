@@ -166,16 +166,12 @@ Just include the following in your module's **build.gradle** file (usually the f
 
     repositories {
         maven {
-            url  "http://dl.bintray.com/sharkofmirkwood/maven"
+            url  "http://dl.bintray.com/gabrielcoman/maven"
         }
     }
 
     dependencies {
-        // load the SuperAwesome SDK core as well as the Unity plugin
         compile 'tv.superawesome.sdk:saunity:<sdk_version_android>'
-
-        // optional Google Play Services
-        compile 'com.google.android.gms:play-services:8.4.0'
     }
 
 and click **Sync Task** when prompted.
@@ -188,11 +184,21 @@ Add the SuperAwesome Android SDK as a JAR library
 If you're running an environment which does not support Gradle, then you'll need to add the SDK manually.
 
 
-1) Download `sa-sdk-<sdk_version_android>.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-<sdk_version_android>.jar>`_
+1) Download the following jar files:
 
-You'll need to add it to your project's **lib** folder, usually **AndroidDemo/app/libs**.
+ * `saadloader.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/saadloader.jar>`_
+ * `saevents.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/saevents.jar>`_
+ * `sajsonparser.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sajsonparser.jar>`_
+ * `samodelspace.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/samodelspace.jar>`_
+ * `sautils.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sautils.jar>`_
+ * `savastparser.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/savastparser.jar>`_
+ * `savideoplayer.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/savideoplayer.jar>`_
+ * `sawebplayer.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sawebplayer.jar>`_
+ * `sa-sdk-<sdk_version_android>.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-<sdk_version_android>.jar>`_
+
+You'll need to add them to your project's **lib** folder, usually **AndroidDemo/app/libs**.
 The libs folder should be located on the same level as the **src** and **build** folders.
-Once it's there, in Android Studio you'll need to select it, right-click it and then **Add as Library**.
+Once they're there, in Android Studio you'll need to select them and add them as libraries.
 
 .. image:: img/IMG_03_JAR_1.png
 
@@ -200,7 +206,7 @@ Once it's there, in Android Studio you'll need to select it, right-click it and 
 
 Also add it to your project's **lib** folder, the same as the previous archive.
 
-2) Download `sa-sdk-res.zip <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-res.zip>`_ and unzip it.
+3) Download `sa-sdk-res.zip <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-res.zip>`_ and unzip it.
 
 You'll find two folders inside:
 
@@ -209,7 +215,7 @@ You'll find two folders inside:
 
 .. image:: img/IMG_03_JAR_2.png
 
-3) Add the following items in your AndroidManifest file, under the Application tag:
+4) Add the following items in your AndroidManifest file, under the Application tag:
 
 .. code-block:: xml
 
@@ -228,7 +234,7 @@ You'll find two folders inside:
 
 This will register two new activities and one service for your application, all needed by the SDK.
 
-4) At the end you'll also need to add Google Play Services as a dependency to the project, either as a JAR or through Gradle.
+5) At the end you'll also need to add Google Play Services as a dependency to the project, either as a JAR or through Gradle.
 
 Final setup
 -----------
