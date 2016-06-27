@@ -196,24 +196,18 @@ If you're running an environment which does not support Gradle, then you'll need
  * `sawebplayer.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sawebplayer.jar>`_
  * `sa-sdk-<sdk_version_android>.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-<sdk_version_android>.jar>`_
 
-You'll need to add them to your project's **lib** folder, usually **AndroidDemo/app/libs**.
-The libs folder should be located on the same level as the **src** and **build** folders.
-Once they're there, in Android Studio you'll need to select them and add them as libraries.
-
-.. image:: img/IMG_03_JAR_1.png
+ And add them as library dependencies in your Android Studio or Eclipse project.
 
 2) Download `saunity.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/saunity.jar>`_
 
-Also add it to your project's **lib** folder, the same as the previous archive.
+Also add it as a library dependency the same as for the previous ones.
 
 3) Download `sa-sdk-res.zip <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-res.zip>`_ and unzip it.
 
 You'll find two folders inside:
 
-* drawable: containing a bunch of PNG files; copy the PNG files inside your projects' **drawable** folder
-* layout: containing a buch of XML files; copy the XML files inside your projects' **layout** folder
-
-.. image:: img/IMG_03_JAR_2.png
+* drawable: containing SDK PNG files; copy the PNG files inside your projects' **drawable** folder
+* layout: containing SDK layout XML files; copy the XML files inside your projects' **layout** folder
 
 4) Add the following items in your AndroidManifest file, under the Application tag:
 
@@ -229,8 +223,6 @@ You'll find two folders inside:
               android:configChanges="keyboardHidden|orientation|screenSize"></activity>
 
     <service android:name="tv.superawesome.lib.sautils.SAAsyncTask$SAAsync" android:exported="false"/>
-
-.. image:: img/IMG_03_JAR_3.png
 
 This will register two new activities and one service for your application, all needed by the SDK.
 
