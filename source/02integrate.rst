@@ -95,8 +95,8 @@ Save the file and exit it. Then execute
 to tell CocoaPods to add the SuperAwesome iOS SDK library and Unity plugins to your project.
 Don't forget to open the **.xcworkspace** file to open your project in Xcode, instead of the .xcproj file, from here on out.
 
-Add iOS dependencies
-^^^^^^^^^^^^^^^^^^^^
+Add Android dependencies
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 For Android builds you should not need to add any other library. All necessary .jar files are already bundled in the .unitypackage file.
 
