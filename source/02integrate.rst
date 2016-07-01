@@ -16,7 +16,7 @@ Integrate the Unity SDK
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 To integrate the base Unity SDK into your app, first download the
-`SuperAwesome-<sdk_version_unity>.unitypackage <https://github.com/SuperAwesomeLTD/sa-unity-sdk-docs/raw/master/source/res/SuperAwesome-<sdk_version_unity>.unitypackage>`_
+`SuperAwesome-<sdk_version_unity>.unitypackage <https://github.com/SuperAwesomeLTD/sa-sdk-build-repo/blob/master/unity_build/SuperAwesome-<sdk_version_unity>.unitypackage?raw=true>`_
 file and import it into your Unity project as a custom assets package.
 
 You should see an image similar to this:
@@ -95,6 +95,11 @@ Save the file and exit it. Then execute
 to tell CocoaPods to add the SuperAwesome iOS SDK library and Unity plugins to your project.
 Don't forget to open the **.xcworkspace** file to open your project in Xcode, instead of the .xcproj file, from here on out.
 
+Add iOS dependencies
+^^^^^^^^^^^^^^^^^^^^
+
+For Android builds you should not need to add any other library. All necessary .jar files are already bundled in the .unitypackage file.
+
 Final setup
 -----------
 
@@ -122,111 +127,6 @@ Finally, when targeting devices for iOS 9 onwards, don't forget to add, for the 
 to be able to load data over both HTTPS and HTTP.
 
 Once this is done your iOS project will be ready to use and any calls to the native SDK from your Unity project will work as expected.
-
-Add Android dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-To complete integrating the SDK for Android, you'll need to follow the next steps (once):
-
-Build the project for Android
------------------------------
-
-To do this, click on **File > Build Settings** menu.
-There, select the **Android** option and check the **Google Android Project** and **Development build** options.
-Then, click on **Build** and save the new Android project on your drive.
-
-.. image:: img/IMG_08_AndroidBuild.png
-
-Create the settings file
-------------------------
-
-Then, go to your new project folder:
-
-.. code-block:: shell
-
-    cd /project_root
-
-
-And in the root of the project create an empty file called **settings.gradle**.
-
-.. image:: img/IMG_08_AndroidProjectStructure.png
-
-Then, using Android Studio, import your Unity Android project by selecting the .gradle file you just created (and following all instructions).
-
-.. image:: img/IMG_08_ImportingAndroid.png
-
-Add the SuperAwesome Android SDK via Gradle
--------------------------------------------
-
-Next, you'll need to add the AwesomeAds Android SDK by following the quick guide below.
-
-Just include the following in your module's **build.gradle** file (usually the file under **MyApplication/app/**):
-
-.. code-block:: shell
-
-    repositories {
-        maven {
-            url  "http://dl.bintray.com/gabrielcoman/maven"
-        }
-    }
-
-    dependencies {
-        compile 'tv.superawesome.sdk:saunity:<sdk_version_android>'
-    }
-
-and click **Sync Task** when prompted.
-
-.. image:: img/IMG_09_GradleSetup.png
-
-Add the SuperAwesome Android SDK as a JAR library
--------------------------------------------------
-
-If you're running an environment which does not support Gradle, then you'll need to add the SDK manually.
-
-
-1) Download the following jar files:
-
- * `saadloader.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/saadloader.jar>`_
- * `saevents.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/saevents.jar>`_
- * `sajsonparser.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sajsonparser.jar>`_
- * `samodelspace.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/samodelspace.jar>`_
- * `sautils.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sautils.jar>`_
- * `savastparser.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/savastparser.jar>`_
- * `savideoplayer.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/savideoplayer.jar>`_
- * `sawebplayer.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sawebplayer.jar>`_
- * `sa-sdk-<sdk_version_android>.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-<sdk_version_android>.jar>`_
-
- And add them as library dependencies in your Android Studio or Eclipse project.
-
-2) Download `saunity.jar <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/saunity.jar>`_
-
-Also add it as a library dependency the same as for the previous ones.
-
-3) Download `sa-sdk-res.zip <https://github.com/SuperAwesomeLTD/sa-mobile-sdk-android-docs/raw/master/source/res/sa-sdk-res.zip>`_ and unzip it.
-
-You'll find two folders inside:
-
-* drawable: containing SDK PNG files; copy the PNG files inside your projects' **drawable** folder
-* layout: containing SDK layout XML files; copy the XML files inside your projects' **layout** folder
-
-4) Add the following items in your AndroidManifest file, under the Application tag:
-
-.. code-block:: xml
-
-    <activity android:name="tv.superawesome.sdk.views.SAFullscreenVideoAd$SAFullscreenVideoAdActivity"
-              android:label="SAFullscreenVideoAd"
-              android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
-
-    <activity android:name="tv.superawesome.sdk.views.SAInterstitialAd$SAInterstitialAdActivity"
-              android:label="SAInterstitialAd"
-              android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
-              android:configChanges="keyboardHidden|orientation|screenSize"></activity>
-
-    <service android:name="tv.superawesome.lib.sautils.SAAsyncTask$SAAsync" android:exported="false"/>
-
-This will register two new activities and one service for your application, all needed by the SDK.
-
-5) At the end you'll also need to add Google Play Services as a dependency to the project, either as a JAR or through Gradle.
 
 Final setup
 -----------
