@@ -98,7 +98,8 @@ Don't forget to open the **.xcworkspace** file to open your project in Xcode, in
 Add Android dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-For Android builds you should not need to add any other library. All necessary .jar files are already bundled in the .unitypackage file.
+For Android builds you should not need to add any other library. All necessary .jar files are already bundled in the .unitypackage file and
+all AndroidManifest.xml additions will be merged in by Unity.
 
 Final setup
 -----------
