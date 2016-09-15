@@ -10,23 +10,16 @@ The following code block sets up an interstitial ad and loads it:
         // initialization
         void Start () {
 
-            // Enabling test mode will load
-            // one of our test ads
-            // By default it is disabled
+            // to display test ads
             SAInterstitialAd.enableTestMode ();
 
-            // You can also specify a certain
-            // orientation for your interstitial ad
+            // lock orientation to portrait or landscape
             SAInterstitialAd.setOrientationPortrait ();
 
-            // The parental gate requires users to
-            // perform a simple math operation when
-            // clicking on an ad
+            // ask users to add two numbers when clicking on an ad
             SAInterstitialAd.enableParentalGate ();
 
-            // Finally you can start the loading
-            // process by telling the SDK to load an
-            // ad for a certain placement
+            // start loading ad data for a placement
             SAInterstitialAd.load (30473);
         }
     }
@@ -37,11 +30,10 @@ Once you've loaded an ad, you can also display it:
 
     public void playInterstitial () {
 
-        // It's good practice to check first
-        // if there is an ad available
+        // check if ad is loaded
         if (SAInterstitialAd.hasAdAvailable (30473)) {
 
-            // if all is OK you may play the ad
+            // display the ad
             SAInterstitialAd.play (30473);
         }
     }

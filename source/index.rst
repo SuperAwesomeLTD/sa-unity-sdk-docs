@@ -20,10 +20,9 @@ Table of Contents:
    :maxdepth: 2
 
    Initial setup <01dashboard>
-   Integrate the SDK <02integrate>
-   Configure the SDK <03config>
-   Banner Ads <05banner>
-   Interstitial Ads <06interstitial>
-   Video Ads <07video>
-   Ad callbacks <08callbacks>
-   Examples <09examples>
+   Integrate the SDK <02add>
+   Banner Ads <04banner>
+   Interstitial Ads <05interstitial>
+   Video Ads <06video>
+   Ad callbacks <07callbacks>
+   Examples <08examples>
