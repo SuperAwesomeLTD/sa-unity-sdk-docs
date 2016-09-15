@@ -33,12 +33,12 @@ Once you've integrated the SuperAwesome SDK, you can access it by:
 
 
 For iOS
-^^^^^^^
+-------
 
 When exporting to an XCode project you'll need to add the following flag to **Other linker flags** in **Build Settings**: '-ObjC'
 
 For Android
-^^^^^^^^^^^
+-----------
 
 When exporting to an Android Studio project you'll need to find the following entry from your AndroidManifest.xml file
 
