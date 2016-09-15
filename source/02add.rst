@@ -25,6 +25,13 @@ If all goes well you should have a series of new folders and files in your Asset
 
 .. image:: img/IMG_03_Assets.png
 
+Once you've integrated the SuperAwesome SDK, you can access it by:
+
+.. code-block:: c#
+
+    using SuperAwesome
+
+
 For iOS
 ^^^^^^^
 
@@ -40,12 +47,3 @@ When exporting to an Android Studio project you'll need to find the following en
     <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
 
 and set its value to **true**. This will ensure then banner ads will be clickable.
-
-Import the SDK
-^^^^^^^^^^^^^^
-
-Once you've integrated the SuperAwesome SDK, you can access it by:
-
-.. code-block:: c#
-
-    using SuperAwesome
