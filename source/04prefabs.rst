@@ -1,7 +1,7 @@
 Using prefabs
 =============
 
-Once you've succesfully integrated the Unity SDK (and the native iOS or Android ones), the simplest way to actually load and diplay ads in your app is through prefabs.
+Once you've successfully integrated the Unity SDK (and the native iOS or Android ones), the simplest way to actually load and diplay ads in your app is through prefabs.
 
 In the Project Explorer panel in the Unity interface, find the `Assets` folder and the `SuperAwesome` subfolder.
 There you'll find three prefabs called:
