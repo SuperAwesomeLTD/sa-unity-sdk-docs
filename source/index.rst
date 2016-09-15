@@ -22,7 +22,6 @@ Table of Contents:
    Initial setup <01dashboard>
    Integrate the SDK <02integrate>
    Configure the SDK <03config>
-   Using prefabs <04prefabs>
    Banner Ads <05banner>
    Interstitial Ads <06interstitial>
    Video Ads <07video>
