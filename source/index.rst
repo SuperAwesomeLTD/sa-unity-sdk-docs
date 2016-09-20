@@ -25,4 +25,5 @@ Table of Contents:
    Interstitial Ads <05interstitial>
    Video Ads <06video>
    Ad callbacks <07callbacks>
-   Examples <08examples>
+   Handle CPI <08cpi>
+   Examples <09examples>
