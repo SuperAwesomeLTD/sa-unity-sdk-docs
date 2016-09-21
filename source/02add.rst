@@ -44,6 +44,6 @@ When exporting to an Android Studio project you'll need to find the following en
 
 .. code-block:: xml
 
-    <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
+    <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" />
 
 and set its value to **true**. This will ensure then banner ads will be clickable.
