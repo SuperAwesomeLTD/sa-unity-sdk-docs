@@ -14,7 +14,7 @@ html_theme_options = {"logo_only":True}
 html_theme_path = ["themes",]
 html_logo = 'themeres/logo.png'
 html_context = {
-    'all_versions' : ['3.0.9'],
+    'all_versions' : ['<sdk_version_unity>'],
     'domain': '<sdk_aa_domain>',
     'sourcecode': '<sdk_source>'
 }
