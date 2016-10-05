@@ -1,0 +1,19 @@
+{
+	"id": "sa-unity-sdk",
+	"theme": {
+		"folder": "themes",
+		"res": "themeres",
+		"name": "satheme"
+	},
+	"project": {
+		"name": "Unity SDK",
+		"author": "Gabriel Coman",
+		"source": "https://github.com/SuperAwesomeLTD/sa-unity-sdk",
+		"domain": "Awesome Ads",
+		"min": "iOS 6.0+, Android 3.0+"
+	},
+	"company": {
+		"name": "2016, SuperAwesome Ltd",
+		"support": "devsupport@superawesome.tv"
+	}
+}

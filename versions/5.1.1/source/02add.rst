@@ -8,10 +8,10 @@ proper WebViews and better fullscreen experience.
 
 To integrate the base Unity SDK into your app, you have two options:
 
-1) Download the latest full SuperAwesome SDK: `SuperAwesomeSDK-<sdk_version_unity>.Unity.full.unitypackage <https://github.com/SuperAwesomeLTD/sa-sdk-build-repo/blob/master/package/SuperAwesomeSDK-<sdk_version_unity>.Unity.full.unitypackage?raw=true>`_.
+1) Download the latest full SuperAwesome SDK: `SuperAwesomeSDK-<sdk_version>.Unity.full.unitypackage <https://github.com/SuperAwesomeLTD/sa-sdk-build-repo/blob/master/package/<sdk_version>/SuperAwesomeSDK-<sdk_version>.Unity.full.unitypackage?raw=true>`_.
 The **full** version will contain everything you need in order to load and display banner, interstitial and video ads as well as the 3rd party `Moat Analytics <https://moat.com/analytics>`_ module.
 
-2) Download the latest base SuperAwesome SDK: `SuperAwesomeSDK-<sdk_version_unity>.Unity.base.unitypackage <https://github.com/SuperAwesomeLTD/sa-sdk-build-repo/blob/master/package/SuperAwesomeSDK-<sdk_version_unity>.Unity.base.unitypackage?raw=true>`_.
+2) Download the latest base SuperAwesome SDK: `SuperAwesomeSDK-<sdk_version>.Unity.base.unitypackage <https://github.com/SuperAwesomeLTD/sa-sdk-build-repo/blob/master/package/<sdk_version>/SuperAwesomeSDK-<sdk_version>.Unity.base.unitypackage?raw=true>`_.
 This has the same functionality as the full version, but lacks the Moat Analytics module.
 
 Either download you choose, you can then import it into your Unity project as a custom assets package.

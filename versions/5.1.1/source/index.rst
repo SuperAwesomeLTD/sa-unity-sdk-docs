@@ -6,10 +6,9 @@ The SuperAwesome Unity SDK (Software Development Kit) lets you to easily add COP
 =============== ========
 Info            Contents
 =============== ========
-Version         <sdk_version_unity>
+Version         <sdk_version>
 GitHub          <sdk_source>
-iOS Support     <sdk_iosmin>
-Android Support <sdk_androidmin>
+Support     	  <sdk_min>
 Support         `<sdk_devsuspport> <mailto:<sdk_devsuspport>>`_
 License         `LICENSE <https://raw.githubusercontent.com/SuperAwesomeLTD/sa-unity-sdk/master/LICENSE>`_
 =============== ========
