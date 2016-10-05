@@ -9,7 +9,7 @@ Info            Contents
 Version         <sdk_version>
 GitHub          <sdk_source>
 Support     	  <sdk_min>
-Support         `<sdk_devsuspport> <mailto:<sdk_devsuspport>>`_
+Contact         `<sdk_devsuspport> <mailto:<sdk_devsuspport>>`_
 License         `LICENSE <https://raw.githubusercontent.com/SuperAwesomeLTD/sa-unity-sdk/master/LICENSE>`_
 =============== ========
 
