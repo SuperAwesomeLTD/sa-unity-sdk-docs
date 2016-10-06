@@ -19,8 +19,8 @@ The following code block sets up a video ad and loads it:
             // lock orientation to portrait or landscape
             SAVideoAd.setOrientationPortrait ();
 
-						// enable or disable the android back button
-						SAVideoAd.enableBackButton ();
+            // enable or disable the android back button
+            SAVideoAd.enableBackButton ();
 
             // enable or disable a close button
             SAVideoAd.disableCloseButton ();

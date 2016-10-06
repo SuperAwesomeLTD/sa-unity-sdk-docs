@@ -16,8 +16,8 @@ The following code block sets up a Game Wall ad and loads it:
             // ask users to add two numbers when clicking on an ad
             SAGameWall.enableParentalGate ();
 
-						// enable or disable the android back button
-						SAGameWall.enableBackButton ();
+            // enable or disable the android back button
+            SAGameWall.enableBackButton ();
 
             // start loading ad data for a placement
             SAGameWall.load (88888);
