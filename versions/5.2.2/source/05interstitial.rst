@@ -40,3 +40,8 @@ Once you've loaded an ad, you can also display it:
             SAInterstitialAd.play (30473);
         }
     }
+
+.. note:: For iOS, when locking orientation with either the **setOrientationPortrait** or **setOrientationLandscape** methods, the SDK will first look at the list of orientations
+          supported by your app and conform to that.
+          If, for example, you set an interstitial ad to display in landscape mode but your app only supports portrait orientations, the ad will show in portrait mode.
+          There are no such restrictions for Android.

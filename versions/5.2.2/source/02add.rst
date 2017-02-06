@@ -32,18 +32,10 @@ Once you've integrated the SuperAwesome SDK, you can access it by:
     using SuperAwesome
 
 
-For iOS
--------
+.. warning:: When exporting for iOS as an XCode project, you'll need to add the following flag to **Other linker flags** in **Build Settings**: -ObjC
 
-When exporting to an XCode project you'll need to add the following flag to **Other linker flags** in **Build Settings**: '-ObjC'
-
-For Android
------------
-
-When exporting to an Android Studio project you'll need to find the following entry from your AndroidManifest.xml file
+.. warning:: When exporting for Android as an Android Studio project you'll need to set the **unityplayer.ForwardNativeEventsToDalvik** entry to **true**
 
 .. code-block:: xml
 
     <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" />
-
-and set its value to **true**. This will ensure then banner ads will be clickable.
