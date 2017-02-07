@@ -10,7 +10,7 @@ Version         <sdk_version> (`Changelog <https://github.com/SuperAwesomeLTD/sa
 Support 		    <sdk_min>
 GitHub          <sdk_source>
 Contact         `<sdk_devsuspport> <mailto:<sdk_devsuspport>>`_
-License         `GNU General Public License Version 3 <https://github.com/SuperAwesomeLTD/sa-unity-sdk/blob/master/LICENSE>`_
+License         `GNU Lesser General Public License Version 3 <https://github.com/SuperAwesomeLTD/sa-unity-sdk/blob/master/LICENSE>`_
 =============== ========
 
 Table of Contents
