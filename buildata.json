@@ -10,7 +10,7 @@
 		"name": "Unity SDK",
 		"author": "Gabriel Coman",
 		"source": "https://github.com/SuperAwesomeLTD/sa-unity-sdk",
-		"domain": "AwesomeAds",
+		"domain": "",
 		"min": "iOS 8.0+, Android 3.0+"
 	},
 	"company": {
