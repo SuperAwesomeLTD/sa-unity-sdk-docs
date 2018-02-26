@@ -7,15 +7,11 @@ proper WebViews and a better fullscreen experience.
 
 To begin integrating the SDK:
 
-1) Download the latest full Unity Publisher SDK: `SuperAwesomeSDK-<sdk_version>.Unity.full.unitypackage <https://github.com/SuperAwesomeLTD/sa-sdk-build-repo/blob/master/package/aa_unity/<sdk_version>/SuperAwesomeSDK-<sdk_version>.Unity.full.unitypackage?raw=true>`_.
-The **full** version will contain everything you need in order to load and display banner, interstitial and video ads as well as the 3rd party `Moat Analytics <https://moat.com/analytics>`_ module.
+Download the latest Unity Publisher SDK: `SuperAwesomeSDK-<sdk_version>.Unity.full.unitypackage <https://github.com/SuperAwesomeLTD/sa-sdk-build-repo/blob/master/package/aa_unity/<sdk_version>/SuperAwesomeSDK-<sdk_version>.Unity.full.unitypackage?raw=true>`_.
 
-2) Download the latest base Unity Publisher SDK: `SuperAwesomeSDK-<sdk_version>.Unity.base.unitypackage <https://github.com/SuperAwesomeLTD/sa-sdk-build-repo/blob/master/package/aa_unity/<sdk_version>/SuperAwesomeSDK-<sdk_version>.Unity.base.unitypackage?raw=true>`_.
-This has the same functionality as the full version, but lacks the Moat Analytics module.
+This version will contain everything you need in order to load and display banner, interstitial and video ads.
 
-Either download you choose, you can then import it into your Unity project as a custom assets package.
-
-You should see an image similar to this:
+You can then import it into your Unity project as a custom assets package. You should see an image similar to this:
 
 .. image:: img/IMG_02_Import.png
 
