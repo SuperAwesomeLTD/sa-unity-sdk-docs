@@ -20,6 +20,15 @@ If all goes well you should have a series of new folders and files in your Asset
 
 .. image:: img/IMG_03_Assets.png
 
+.. warning:: Please remember that for Android you also need to add **Google Play Services** and an **App Compat** library. These are needed for correct viewability metrics.
+
+.. code-block:: shell
+
+    dependencies {
+        implementation 'com.android.support:appcompat-v7:+'
+        implementation 'com.google.android.gms:play-services-ads:+'
+    }
+
 Once you've integrated the SuperAwesome SDK, you can access it by:
 
 .. code-block:: c#
