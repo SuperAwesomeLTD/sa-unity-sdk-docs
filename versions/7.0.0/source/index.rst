@@ -19,7 +19,7 @@ Table of Contents
 .. toctree::
    :maxdepth: 2
 
-   Initial setup <01dashboard>
+   Preparing <01dashboard>
    Add the SDK <02add>
 	 Initialise the SDK <03initsdk>
    Banner Ads <03banner>

@@ -20,6 +20,15 @@ If all goes well you should have a series of new folders and files in your Asset
 
 .. image:: img/IMG_03_Assets.png
 
+Once you've integrated the SuperAwesome SDK, you can access it by:
+
+.. code-block:: c#
+
+    using tv.superawesome.sdk.publisher;
+
+Additional steps for Android builds
+-----------------------------------
+
 .. warning:: Please remember that for Android you also need to add **Google Play Services** and an **App Compat** library. These are needed for correct viewability metrics.
 
 .. code-block:: shell
@@ -29,17 +38,13 @@ If all goes well you should have a series of new folders and files in your Asset
         implementation 'com.google.android.gms:play-services-ads:+'
     }
 
-Once you've integrated the SuperAwesome SDK, you can access it by:
-
-.. code-block:: c#
-
-    using SuperAwesome
-
-
-.. warning:: When exporting for iOS as an XCode project, you'll need to add the following flag to **Other linker flags** in **Build Settings**: -ObjC
-
 .. warning:: When exporting for Android as an Android Studio project you'll need to set the **unityplayer.ForwardNativeEventsToDalvik** entry to **true**
 
 .. code-block:: xml
 
     <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" />
+
+Additional steps for iOS builds
+-------------------------------
+
+.. warning:: When exporting for iOS as an XCode project, you'll need to add the following flag to **Other linker flags** in **Build Settings**: -ObjC
