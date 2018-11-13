@@ -1,5 +1,5 @@
 {
-	"id": "sa-unity-sdk",
+	"id": "social-android-ui-sdk",
 	"theme": {
 		"folder": "themes",
 		"res": "themeres",
@@ -7,14 +7,14 @@
 		"color": "256EFF"
 	},
 	"project": {
-		"name": "Unity Publisher SDK",
+		"name": "Android Social SDK",
 		"author": "Gabriel Coman",
 		"source": "https://github.com/SuperAwesomeLTD/sa-unity-sdk",
 		"domain": "",
-		"min": "iOS 8.0+, Android 4.0+"
+		"min": "Android 4.0+"
 	},
 	"company": {
 		"name": "2018, SuperAwesome Ltd",
-		"support": "awesomeads-support@superawesome.tv"
+		"support": "support@superawesome.tv"
 	}
 }
