@@ -51,7 +51,7 @@ Set swift version to **4.2**, if not already set
 
 .. image:: img/IMG_ADD_1.png
 
-Add runpaths @executable_path/Frameworks** to runpaths
+Add runpaths **@executable_path/Frameworks** to runpaths
 
 .. image:: img/IMG_ADD_2.png
 
@@ -62,3 +62,7 @@ Set C lang dialect to **gnu99**, if not already set
 Enable modules (C and Obj-C), if not already enabled
 
 .. image:: img/IMG_ADD_5.png
+
+For Unity 2019, make sure you explicitly add the **SuperAwesomeUnity.framework** in the **Frameworks, Libraries & Embedde Content** section of XCode.
+
+.. image:: img/IMG_ADD_6.png
